@@ -1,124 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Gabe's Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  </head>
-  <body>
-<section class="hero is-info is-large">
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item">
-            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroB" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Home
-            </a>
-            <a href="https://resume.creddle.io/resume/h55x9qcr853"
-               target="_blank"
-               class="navbar-item">
-              Resume
-            </a>
-<!--             <a class="navbar-item">
-              Documentation
-            </a> -->
-            <span class="navbar-item">
-              <a class="button is-info is-inverted"
-                 href="https://github.com/ghildreth"
-                 target="_blank">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Find me</span>
-              </a>
-            </span>
-          </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <style>
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.is-paddingless-horizontal { padding-left 0; padding-right: 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) 1.5rem 1fr [xl-end];
+
+}
+
+.grid * {grid-column: md; }
+.grid-xl {grid-column: xl; }
+  </style>
+}
+
+
+</head>
+<body>
+  <section class="section is-paddingless-horizontal">
+    <div class="container grid">
+      <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Welcome to my page!</a></li>
+
+        </ul>
+
+      </nav>
+    </div>
+  </section>
+
+
+  <section class="section is-paddingless-horizontal" style="padding-top: 0;">
+    <div class="container grid">
+
+      <article class="media center">
+        <figure class="media-left">
+          <figure class="image is-64x64 ">
+            <img src="images/pp1.jpg">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Gabriel Anton Hildreth</strong>
+              <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a> <br>
+              <span class="has-text-grey">Sociology - Boot-camp Grad, motivated to change the world<br>
+              <time datetime="2018-05-25">Created: May 25</time></span>
+              <!-- <i class="fab fa-linkedin"><a href="www.linkedin.com/in/ghildreth"></a></i> -->
+            </p>
+
           </div>
         </div>
+      </article>
+      <div class="section is-paddingless-horizontal">
+        <h1 class="title is-2">About Me</h1>
+        <h2 class="subtitle is-3">My recent projects</h2>
       </div>
-    </nav>
-  </div>
 
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title">
-        Gabriel Hildreth
-      </p>
-      <p class="subtitle">
-        Full-stack Developer
-      </p>
+        <figure class="columns is-moblie is-variable is-0 is-marginless grid-xl">
+          <div class="column">
+            <div class="image card">
+              <a><img src="images/beercat.png"></a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image card">
+              <a><img src="images/chatty.png"></a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image card">
+              <a><img src="images/goof.jpg"></a>
+            </div>
+          </div>
+        </figure>
+        <figcaption>
+          <small class="level-item has-text-grey">
+            These projects were built in less than a week! <a href="https://github.com/ghildreth" target="blank">Find out more on GitHub<i class="fab fa-github"></i></a>
+          </small>
+        </figcaption>
+
     </div>
-  </div>
+  </section>
 
-  <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li class="is-active">
-            <a href="#Overview">Overview</a>
-          </li>
-          <li>
-            <a>Projects</a>
-          </li>
-          <li>
-            <a>About me</a>
-          </li>
-<!--           <li>
-            <a>Elements</a>
-          </li>
-          <li>
-            <a>Components</a>
-          </li>
-          <li>
-            <a>Layout</a>
-          </li>
-        </ul> -->
-      </div>
-    </nav>
-  </div>
-</section>
- <div id="Overview" class="section">
-
-    <p>
-      I majored in Sociology when I attended university, and after completing a 10 week bootcamp at Lighthouse Labs I finally feel like I've found my true calling: web development.
-          <h3>Qualifications</h3>
-    <ul>
-      <li>Education</li>
-      Lighthouse Labs
-      2018
-      Immersive Web Development Bootcamp
-
-      University of California Santa Cruz
-      BA Sociology 2012
-      Focus on statistical entry and analysis.
-      A rigorous program of study that ensures that I was trained in the main theoretical and methodological of sociology -- which is diverse enough to fit in my recent technological training at Lighthouse Labs.
-      I have aspirations to create projects and applications that will have a lasting social impact.
-      <li>Work Experience</li>
-
-      Fairmont Hotels and Resorts Waterfront
-      Server
-      May 2014 to Current
-      Expert with Micros Systems POS.  Responsible for financial reads and requiring due backs. Team player in a fast paced environment. "Full Stack Server": ability to effectively to communicate with front (guests, serving colleagues) and back of house (other hotel departments) quite similarly  to being a web dev and understanding the larger goals to see the bigger picture.
-
-      Hillstone Restaurant Group  Los Altos Grill
-      Head Server
-      Oct 2010 to Jun 2013
-      Utilized MS Excel to generate a daily sales and profit report.  Contributed to the espirit de corps of Hillstone's unique corporate culture and honed communication skills within my team to provide the optimal guest experience
-    </ul>
-    </p>
-  </div>
-  </body>
+</body>
 </html>
