@@ -91,7 +91,7 @@
               <a href="https://github.com/ghildreth/jungle-rails" target="_blank"><img src="images/jungle.png"></a>
             </div>
           </div>
-          <div class="column">
+<!--           <div class="column">
             <div class="image card">
               <a href="https://github.com/ghildreth/cardGame" target="_blank"><img src="images/truegoof.png"></a>
             </div>
@@ -100,7 +100,7 @@
             <div class="image card">
               <a href="https://github.com/ghildreth/tweeter" target="_blank"><img src="images/tweet.png"></a>
             </div>
-          </div>
+          </div> -->
           </div>
         </figure>
         <figcaption>
@@ -154,9 +154,17 @@
             </dl>
             <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p> -->
             <h4>Passion</h4>
-            <p>I've found beauty in ideas that transcend Computer Science, namely: Recursion, Algo</p>
+            <p>I've found beauty in ideas that transcend Computer Science, namely: Algorithms, Logarithms and Recursion</p>
             <pre>
-&lt;!DOCTYPE html&gt;
+function power(base, exponent) {
+  if (exponent == 0) {
+    return 1;
+  } else {
+    return base * power (base, exponent - 1);
+  }
+}
+console.log(power(2, 3));
+<!-- &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Hello World&lt;/title&gt;
@@ -164,7 +172,7 @@
   &lt;body&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
   &lt;/body&gt;
-&lt;/html&gt;
+&lt;/html&gt; -->
           </pre>
 <!--             <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
             <table>
