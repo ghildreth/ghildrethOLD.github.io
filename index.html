@@ -27,12 +27,32 @@
 
 .grid * {grid-column: md; }
 .grid-xl {grid-column: xl; }
+
+.image img {
+    display: block;
+    height: auto;
+    width: 100%;
+    height: 215px;
+}
+img#gabe {
+    height: auto;
+}
+
+article.media.center {
+    margin-top: 80px;
+}
+
+.content.is-primary {
+    margin-top: 80px;
+}
+
   </style>
 
 
 
 </head>
 <body>
+<section class="hero is-primary">
   <section class="section is-paddingless-horizontal">
     <div class="container grid">
       <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
@@ -46,6 +66,7 @@
       </nav>
     </div>
   </section>
+</section>
 
 
   <section class="section is-paddingless-horizontal" style="padding-top: 0;">
@@ -54,7 +75,7 @@
       <article class="media center">
         <figure class="media-left">
           <figure class="image is-64x64 ">
-            <img src="images/pp1.jpg">
+            <img src="images/pp1.jpg" id="gabe">
           </figure>
         </figure>
         <div class="media-content">
@@ -72,13 +93,13 @@
       </article>
       <div class="section is-paddingless-horizontal">
         <h1 class="title is-2">About Me</h1>
-        <h2 class="subtitle is-3">My recent projects</h2>
+        <h2 class="subtitle is-3">Recent projects</h2>
       </div>
 
         <figure class="columns is-moblie is-variable is-0 is-marginless grid-xl">
           <div class="column">
             <div class="image card">
-              <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png"></a>
+              <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png" height="200"></a>
             </div>
           </div>
           <div class="column">
@@ -105,7 +126,7 @@
         </figure>
         <figcaption>
           <small class="level-item has-text-grey">
-            These projects, and more, were built in less than a week! <a href="https://github.com/ghildreth" target="blank">You can find them here on my GitHub<i class="fab fa-github"></i></a>
+            These projects, and more, were built in less than a week! You can find them <br> <a href="https://github.com/ghildreth" target="blank"> here on my GitHub<i class="fab fa-github"></i></a>
           </small>
         </figcaption>
 
@@ -117,7 +138,7 @@
           <h5>Hello World</h5>
           <h6>Hello World</h6> -->
           <div class="content is-primary">
-            <h1>Hello World</h1>
+            <h1>Hello World!</h1>
             <p>My background with coding started in 2004 when MySpace.com began and allowed users edit their home-pages with HTML and CSS packages. Although I’ve been mainly into hardware and IT, this year turns the page to the next chapeter in my life: I plunged into the world of programming: featuring JavaScript, Ruby and Python. I’ve found my calling! I wish to use my knowledge of sociology, hospitality and music to fuse with code. I yearn to make meaningful applications that will have a lasting impact on society.</p>
             <h2>Lighthouse Labs</h2>
             <p>I chose to switch careers because I wanted to use my creativity to build things. Lighthouse Labs gave me the guidance to build using powerful languages, libraries, frameworks. My main focus has been growing as a JavaScript developer. With this comes the other two piece of the holy trinity: HTML and CSS. Before starting bootcamp I was able to practice with Python (through Udacity’s Intro to Computer Science Nanodegree). While attending Lighthouse Labs, I also became proficient with Ruby.  During this time in bootcamp, I discovered one of my favorite languages is SQL. Actually, most of my projects are using PostgreSQL which has improved my relational databases skills. Although, I also have experience using noSQL such as: MongoDB. In terms of libraries, our week 3 project “Tweeter” honed in my skills using JQuery. Later on in the course, week 5, we started training with React.js. So, by first using vanilla Javascript then JQuery we developed an appreciation for the library. Thereby learning React.js after JQuery furthered our appreciation for the framework and ensured that we understood the concepts of what’s happening underneath the magic. Lighthouse Labs helped me understand the power behind Node.js, our first project is run on Node.js/Express. From that very first project, we learned a great deal behind the technologies used to run servers, HTTP and RESTful conventions. So, by the time we training with Ruby on Rails, we had a fundamental understanding of MCV, routes and CRUD. Here are some bullet points from my overall experience with LHL:</p>
@@ -174,7 +195,7 @@ console.log(power(2, 3));
   &lt;/body&gt;
 &lt;/html&gt; -->
           </pre>
-<!--             <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
+            <!-- <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
             <table>
               <thead>
                 <tr>
@@ -204,7 +225,7 @@ console.log(power(2, 3));
                   <td>Twelve</td>
                 </tr>
               </tbody>
-            </table>
+            </table> -->
             <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
             <h5>Fifth level</h5>
             <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
@@ -218,7 +239,7 @@ console.log(power(2, 3));
             <h6>Sixth level</h6>
             <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
           </div>
-        </div> -->
+        </div>
 
   </section>
 
