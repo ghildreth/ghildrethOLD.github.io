@@ -62,14 +62,17 @@ img {
 
 </head>
 <body>
-<section class="hero is-primary">
+<section class="hero is-success">
   <section class="section is-paddingless-horizontal">
     <div class="container grid">
       <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé</a></li>
-          <li class="is-active"><a href="#" aria-current="page">Welcome to my page!</a></li>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#lhl">LHL</a></li>
+          <li><a href="#degree">University</a></li>
+          <li><a href="#passion">Passion</a></li>
+          <li><a href="#otherProjects">Projects</a></li>
+          <!-- <li class="is-active"><a href="#" aria-current="page">Welcome to my page!</a></li> -->
 
         </ul>
 
@@ -84,17 +87,20 @@ img {
 
       <article class="media center">
         <figure class="media-left">
-          <figure class="image is-64x64 ">
+          <figure class="image is-128x128 ">
             <img src="images/pp1.jpg" id="gabe">
           </figure>
         </figure>
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>Gabriel Anton Hildreth</strong>
-              <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a> <br>
+              <strong>Gabriel Anton Hildreth</strong><br>
               <span class="has-text-grey">Sociology - Boot-camp Grad, motivated to change the world<br>
-              <time datetime="2018-05-25">Created: May 25</time></span>
+              <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
+              <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
+              <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
+    
+              <!-- <time datetime="2018-05-25">Created: May 25</time></span> -->
               <!-- <i class="fab fa-linkedin"><a href="www.linkedin.com/in/ghildreth"></a></i> -->
             </p>
 
@@ -158,9 +164,9 @@ img {
           <h5>Hello World</h5>
           <h6>Hello World</h6> -->
           <div class="content is-primary">
-            <h1>Hello World!</h1>
+            <h1 id="intro" >Hello World!</h1>
             <p>My background with coding started in 2004 when MySpace.com began and allowed users edit their home-pages with HTML and CSS. Although I’ve been mainly into hardware and IT, this year turns the page to the next chapeter in my life: I plunged into the world of programming: featuring JavaScript, Ruby and Python. I’ve found my calling! I wish to use my knowledge of sociology, hospitality and music to fuse with code. I yearn to make meaningful applications that will have a lasting impact on society.</p>
-            <h2>Lighthouse Labs</h2>
+            <h2 id="lhl">Lighthouse Labs</h2>
             <p>I chose to switch careers because I wanted to use my creativity to build things. Lighthouse Labs gave me the guidance to build using powerful languages, libraries, frameworks. My main focus has been growing as a JavaScript developer. With this comes the other two piece of the holy trinity: HTML and CSS. Before starting bootcamp I was able to practice with Python (through Udacity’s Intro to Computer Science Nanodegree). While attending Lighthouse Labs, I also became proficient with Ruby.  During this time in bootcamp, I discovered one of my favorite languages is SQL. Actually, most of my projects are using PostgreSQL which has improved my relational databases skills. Although, I also have experience using noSQL such as: MongoDB. In terms of libraries, our week 3 project “Tweeter” honed in my skills using JQuery. Later on in the course, week 5, we started training with React.js. So, by first using vanilla Javascript then JQuery we developed an appreciation for the library. Thereby learning React.js after JQuery furthered our appreciation for the framework and ensured that we understood the concepts of what’s happening underneath the magic. Lighthouse Labs helped me understand the power behind Node.js, our first project is run on Node.js/Express. From that very first project, we learned a great deal behind the technologies used to run servers, HTTP and RESTful conventions. So, by the time we training with Ruby on Rails, we had a fundamental understanding of MCV, routes and CRUD. Here are some bullet points from my overall experience with LHL:</p>
             <ul>
               <li>Learning How to Learn</li>
@@ -170,7 +176,7 @@ img {
               <li>Collaboration on Group Projects</li>
               <!-- <li>Ut non enim metus.</li> -->
             </ul>
-            <h3>Sociology Degree</h3>
+            <h3 id="degree">Sociology Degree</h3>
             <p>A rigorous program of study that ensures that I was trained in the main theoretical and methodological of sociology -- which
             is diverse enough to fit in my recent technological training at Lighthouse Labs.
             I have aspirations to create projects and applications that will have a lasting social impact. Some highlights of my education:</p>
@@ -194,7 +200,7 @@ img {
               <dd>A technology to make HTML look better</dd>
             </dl>
             <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p> -->
-            <h4>Passion</h4>
+            <h4 id="passion">Passion</h4>
             <p>I've found beauty in ideas that transcend Computer Science, namely: Algorithms, Logarithms and Recursion. Here's an example of a function that, so simply, displays the elegant nature of recursion in terms of mathematics.</p>
             <pre>
 function power(base, exponent) {
@@ -247,7 +253,7 @@ console.log(power(2, 3));
               </tbody>
             </table> -->
             
-            <h5>Other Projects</h5>
+            <h5 id="otherProjects">Other Projects</h5>
             <p>This first image is the card game I built for my midterm project at Lightouse Labs: Goofspiel, also known as The Game of Pure Strategy or GOPS, is a card game for two or more players. It was invented by Merrill Flood while at Princeton University in the 1930s.</p>
             <figure>
               <img src="images/truegoof.png">
