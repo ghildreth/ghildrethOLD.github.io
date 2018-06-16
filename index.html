@@ -56,17 +56,52 @@ img {
     height: 563px;
 }
 
+img#gabe {
+    height: 480px;
+    width: 480px;
+}
+
+article.media.center {
+    width: 50%;
+}
+
+section.section.is-paddingless-horizontal.is-moblie {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.header-image {
+    background-image: url("./images/snow.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+a:hover {
+    /* glow effect on hover */
+    text-shadow: -1px 1px 20px #ffc, 1px -1px 20px #fff;
+
+    -webkit-transition: text-shadow 250ms linear 0s;
+    -moz-transition: text-shadow 250ms linear 0s;
+    -o-transition: text-shadow 250ms linear 0s;
+    transition: text-shadow 250ms linear 0s;
+}
+
+/* //http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg */
+
   </style>
 
 
 
 </head>
 <body>
-<section class="hero is-primary">
+<section class="hero is-fullheight is-moblie header-image" id="head">
   <section class="section is-paddingless-horizontal">
     <div class="container grid">
       <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
-        <ul>
+        <ul style="font-size: 1.5em">
+          <li><a href="#about">About</a></li>
           <li><a href="#intro">Intro</a></li>
           <li><a href="#lhl">LHL</a></li>
           <li><a href="#degree">University</a></li>
@@ -82,37 +117,36 @@ img {
 </section>
 
 
-  <section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <section class="section is-paddingless-horizontal is-moblie" style="padding-top: 0;"id="about">
     <div class="container grid">
-
       <article class="media center">
         <figure class="media-left">
-          <figure class="image is-128x128 ">
+          <figure class="image is-1x1 ">
             <img src="images/pp1.jpg" id="gabe">
           </figure>
         </figure>
-        <div class="media-content">
-          <div class="content">
-            <p>
-              <strong>Gabriel Anton Hildreth</strong><br>
-              <span class="has-text-grey">Sociology - Boot-camp Grad, motivated to change the world<br>
-              <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
-              <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
-              <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
-    
-              <!-- <time datetime="2018-05-25">Created: May 25</time></span> -->
-              <!-- <i class="fab fa-linkedin"><a href="www.linkedin.com/in/ghildreth"></a></i> -->
-            </p>
-
-          </div>
-        </div>
       </article>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <h1><strong>Gabriel Anton Hildreth</strong></h1><br>
+            <span class="has-text-grey">Sociology - Boot-camp Grad, motivated to change the world<br>
+            <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
+            <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
+            <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
+  
+            <!-- <time datetime="2018-05-25">Created: May 25</time></span> -->
+            <!-- <i class="fab fa-linkedin"><a href="www.linkedin.com/in/ghildreth"></a></i> -->
+          </p>
+
+        </div>
+      </div>
       <div class="section is-paddingless-horizontal">
         <h1 class="title is-2">So, what have you done?</h1>
         <h2 class="subtitle is-3">A Sample of My Recent Projects:</h2>
       </div>
 
-        <figure class="columns is-moblie is-variable is-0 is-marginless grid-xl">
+        <figure class="columns is-moblie is-variable is-1 is-marginless grid-xl">
           <div class="column">
             <div class="image card">
               <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png" height="200"></a>
@@ -307,7 +341,7 @@ console.log(power(2, 3));
           </div>
         </div>
   </section>
-
+  <script src="test.js"></script>
 </body>
 
 </html>
