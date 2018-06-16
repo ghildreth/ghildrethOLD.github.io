@@ -88,6 +88,37 @@ a:hover {
     transition: text-shadow 250ms linear 0s;
 }
 
+div#title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 200px;
+}
+  
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+}
+
 /* //http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg */
 
   </style>
@@ -110,7 +141,14 @@ a:hover {
           <!-- <li class="is-active"><a href="#" aria-current="page">Welcome to my page!</a></li> -->
 
         </ul>
-
+        <div class="typewriter">
+            <h1 class="title">
+                Gabriel Hildreth
+            </h1>
+            <h2 class="subtitle">
+                Full-Stack Web Developer
+            </h2>
+        </div>
       </nav>
     </div>
   </section>
