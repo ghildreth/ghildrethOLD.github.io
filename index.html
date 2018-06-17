@@ -57,12 +57,12 @@ img {
 }
 
 img#gabe {
-    height: 480px;
-    width: 480px;
+    height: auto;
+    width: AUTO;
 }
 
 article.media.center {
-    width: 50%;
+    width: 480px;
 }
 
 section.section.is-paddingless-horizontal.is-moblie {
@@ -71,7 +71,7 @@ section.section.is-paddingless-horizontal.is-moblie {
     width: 80%;
 }
 .header-image {
-    background-image: url("./images/snow.jpg");
+    background-image: url("http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -117,6 +117,14 @@ div#title {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+
+#intr0{
+  flex: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 50px;
 }
 
 /* //http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg */
@@ -131,7 +139,7 @@ div#title {
   <section class="section is-paddingless-horizontal">
     <div class="container grid">
       <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
-        <ul style="font-size: 1.5em">
+        <ul style="font-size: 1.0em">
           <li><a href="#about">About</a></li>
           <li><a href="#intro">Intro</a></li>
           <li><a href="#lhl">LHL</a></li>
@@ -141,6 +149,7 @@ div#title {
           <!-- <li class="is-active"><a href="#" aria-current="page">Welcome to my page!</a></li> -->
 
         </ul>
+        <div id="intr0">
         <div class="typewriter">
             <h1 class="title">
                 Gabriel Hildreth
@@ -149,6 +158,7 @@ div#title {
                 Full-Stack Web Developer
             </h2>
         </div>
+        <div>
       </nav>
     </div>
   </section>
@@ -169,10 +179,11 @@ div#title {
           <p>
             <h1><strong>Gabriel Anton Hildreth</strong></h1><br>
             <span class="has-text-grey">Sociology - Boot-camp Grad, motivated to change the world<br>
+              <div id="links">
             <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
             <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
             <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
-  
+            </div>
             <!-- <time datetime="2018-05-25">Created: May 25</time></span> -->
             <!-- <i class="fab fa-linkedin"><a href="www.linkedin.com/in/ghildreth"></a></i> -->
           </p>
