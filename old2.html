@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script type="text/javascript" src="/node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.js"></script>
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <style>
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.is-paddingless-horizontal { padding-left 0; padding-right: 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) 1.5rem 1fr [xl-end];
+
+}
+
+.grid * {grid-column: md; }
+.grid-xl {grid-column: xl; }
+
+.image img {
+    display: block;
+    height: auto;
+    width: 100%;
+    height: 230px;
+}
+img#gabe {
+    height: auto;
+}
+
+article.media.center {
+    margin-top: 80px;
+}
+
+.content.is-primary {
+    margin-top: 80px;
+}
+
+@media (max-width: 672px){
+  :root {
+    font-size: 90%;
+  }
+}
+img {
+    height: 563px;
+}
+
+img#gabe {
+    height: auto;
+    width: AUTO;
+}
+
+article.media.center {
+    width: 480px;
+}
+
+section.section.is-paddingless-horizontal.is-moblie {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.header-image {
+    background-image: url("http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+a:hover {
+    /* glow effect on hover */
+    text-shadow: -1px 1px 20px #ffc, 1px -1px 20px #fff;
+
+    -webkit-transition: text-shadow 250ms linear 0s;
+    -moz-transition: text-shadow 250ms linear 0s;
+    -o-transition: text-shadow 250ms linear 0s;
+    transition: text-shadow 250ms linear 0s;
+}
+
+div#title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 200px;
+}
+  
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}
+
+#intr0{
+  flex: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 50px;
+}
+
+/* //http://orig14.deviantart.net/7584/f/2015/181/2/7/flat_mountains_landscape_by_ggiuliafilippini-d8zdbco.jpg */
+
+  </style>
+
+
+
+</head>
+<body>
+<section class="hero is-fullheight is-moblie header-image" id="head">
+  <section class="section is-paddingless-horizontal">
+    <div class="container grid">
+      <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+        <ul style="font-size: 1.0em">
+          <li><a href="#about">About</a></li>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#lhl">LHL</a></li>
+          <li><a href="#degree">University</a></li>
+          <li><a href="#passion">Passion</a></li>
+          <li><a href="#otherProjects">Projects</a></li>
+          <!-- <li class="is-active"><a href="#" aria-current="page">Welcome to my page!</a></li> -->
+
+        </ul>
+        <div id="intr0">
+        <div class="typewriter">
+            <h1 class="title">
+                Gabriel Hildreth
+            </h1>
+            <h2 class="subtitle">
+                Full-Stack Web Developer
+            </h2>
+        </div>
+        <div>
+      </nav>
+    </div>
+  </section>
+</section>
+
+
+  <section class="section is-paddingless-horizontal is-moblie" style="padding-top: 0;"id="about">
+    <div class="container grid">
+      <article class="media center">
+        <figure class="media-left">
+          <figure class="image is-1x1 ">
+            <img src="images/pp1.jpg" id="gabe">
+          </figure>
+        </figure>
+      </article>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <h1><strong>Gabriel Anton Hildreth</strong></h1><br>
+            <span class="has-text-grey">Sociology - Boot-camp Grad, motivated to change the world<br>
+              <div id="links">
+            <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
+            <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
+            <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
+            </div>
+            <!-- <time datetime="2018-05-25">Created: May 25</time></span> -->
+            <!-- <i class="fab fa-linkedin"><a href="www.linkedin.com/in/ghildreth"></a></i> -->
+          </p>
+
+        </div>
+      </div>
+      <div class="section is-paddingless-horizontal">
+        <h1 class="title is-2">So, what have you done?</h1>
+        <h2 class="subtitle is-3">A Sample of My Recent Projects:</h2>
+      </div>
+
+        <figure class="columns is-moblie is-variable is-1 is-marginless grid-xl">
+          <div class="column">
+            <div class="image card">
+              <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png" height="200"></a>
+            </div>
+              <small class="level-item has-text-grey">
+               Beer Cat: Tourism App.
+              </small>
+            </small>
+          </div>
+          <div class="column">
+            <div class="image card">
+              <a href="https://github.com/ghildreth/chattyApp" target="_blank"><img src="images/austin.png"></a>
+            </div>
+              <small class="level-item has-text-grey">
+                Chatty: Chatroom server.
+              </small>
+          </div>
+          <div class="column">
+            <div class="image card">
+              <a href="https://github.com/ghildreth/jungle-rails" target="_blank"><img src="images/jungle.png"></a>
+            </div>
+              <small class="level-item has-text-grey">
+               Jungle: E-commerce website.
+              </small>
+          </div>
+<!--           <div class="column">
+            <div class="image card">
+              <a href="https://github.com/ghildreth/cardGame" target="_blank"><img src="images/truegoof.png"></a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="image card">
+              <a href="https://github.com/ghildreth/tweeter" target="_blank"><img src="images/tweet.png"></a>
+            </div>
+          </div> -->
+          </div>
+        </figure>
+        <figcaption>
+          <small class="level-item has-text-grey">
+            These projects, and more, were built in less than a week! You can find them <br> <a href="https://github.com/ghildreth" target="blank"> here on my GitHub<i class="fab fa-github"></i></a>
+          </small>
+        </figcaption>
+
+<!--         <div class="content">
+          <h1>Hello World</h1>
+          <h2>Hello World</h2>
+          <h3>Hello World</h3>
+          <h4>Hello World</h4>
+          <h5>Hello World</h5>
+          <h6>Hello World</h6> -->
+          <div class="content is-primary">
+            <h1 id="intro" >Hello World!</h1>
+            <p>My background with coding started in 2004 when MySpace.com began and allowed users edit their home-pages with HTML and CSS. Although I’ve been mainly into hardware and IT, this year turns the page to the next chapeter in my life: I plunged into the world of programming: featuring JavaScript, Ruby and Python. I’ve found my calling! I wish to use my knowledge of sociology, hospitality and music to fuse with code. I yearn to make meaningful applications that will have a lasting impact on society.</p>
+            <h2 id="lhl">Lighthouse Labs</h2>
+            <p>I chose to switch careers because I wanted to use my creativity to build things. Lighthouse Labs gave me the guidance to build using powerful languages, libraries, frameworks. My main focus has been growing as a JavaScript developer. With this comes the other two piece of the holy trinity: HTML and CSS. Before starting bootcamp I was able to practice with Python (through Udacity’s Intro to Computer Science Nanodegree). While attending Lighthouse Labs, I also became proficient with Ruby.  During this time in bootcamp, I discovered one of my favorite languages is SQL. Actually, most of my projects are using PostgreSQL which has improved my relational databases skills. Although, I also have experience using noSQL such as: MongoDB. In terms of libraries, our week 3 project “Tweeter” honed in my skills using JQuery. Later on in the course, week 5, we started training with React.js. So, by first using vanilla Javascript then JQuery we developed an appreciation for the library. Thereby learning React.js after JQuery furthered our appreciation for the framework and ensured that we understood the concepts of what’s happening underneath the magic. Lighthouse Labs helped me understand the power behind Node.js, our first project is run on Node.js/Express. From that very first project, we learned a great deal behind the technologies used to run servers, HTTP and RESTful conventions. So, by the time we training with Ruby on Rails, we had a fundamental understanding of MCV, routes and CRUD. Here are some bullet points from my overall experience with LHL:</p>
+            <ul>
+              <li>Learning How to Learn</li>
+              <li>Effective Problem Solving</li>
+              <li>Becoming Full-Stack Developer</li>
+              <li>Using Version Control</li>
+              <li>Collaboration on Group Projects</li>
+              <!-- <li>Ut non enim metus.</li> -->
+            </ul>
+            <h3 id="degree">Sociology Degree</h3>
+            <p>A rigorous program of study that ensures that I was trained in the main theoretical and methodological of sociology -- which
+            is diverse enough to fit in my recent technological training at Lighthouse Labs.
+            I have aspirations to create projects and applications that will have a lasting social impact. Some highlights of my education:</p>
+            <ol>
+              <li>Focus on statistical entry and analysis.</li>
+              <li>Passion for manipulating data</li>
+              <li>I understand the importance of business, capital and means of production</li>
+              <li>I’ve studied the social implications of the internet, technology and media </li>
+              <li>I want to find out how technology can more our lives better</li>
+            </ol>
+            <blockquote>"Human well-being is not a random phenomenon. It depends on many factors - ranging from genetics and neurobiology to sociology and economics. But, clearly, there are scientific truths to be known about how we can flourish in this world. Whereever we can have an impact on the well-being of others, questions of morality apply."
+              <small>- Sam Harris</small></blockquote>
+   <!--          <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
+            <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
+            <dl>
+              <dt>Web</dt>
+              <dd>The part of the Internet that contains websites and web pages</dd>
+              <dt>HTML</dt>
+              <dd>A markup language for creating web pages</dd>
+              <dt>CSS</dt>
+              <dd>A technology to make HTML look better</dd>
+            </dl>
+            <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p> -->
+            <h4 id="passion">Passion</h4>
+            <p>I've found beauty in ideas that transcend Computer Science, namely: Algorithms, Logarithms and Recursion. Here's an example of a function that, so simply, displays the elegant nature of recursion in terms of mathematics.</p>
+            <pre>
+function power(base, exponent) {
+  if (exponent == 0) {
+    return 1;
+  } else {
+    return base * power (base, exponent - 1);
+  }
+}
+console.log(power(2, 3));
+<!-- &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello World&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt; -->
+          </pre>
+            <!-- <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>One</th>
+                  <th>Two</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Three</td>
+                  <td>Four</td>
+                </tr>
+                <tr>
+                  <td>Five</td>
+                  <td>Six</td>
+                </tr>
+                <tr>
+                  <td>Seven</td>
+                  <td>Eight</td>
+                </tr>
+                <tr>
+                  <td>Nine</td>
+                  <td>Ten</td>
+                </tr>
+                <tr>
+                  <td>Eleven</td>
+                  <td>Twelve</td>
+                </tr>
+              </tbody>
+            </table> -->
+            
+            <h5 id="otherProjects">Other Projects</h5>
+            <p>This first image is the card game I built for my midterm project at Lightouse Labs: Goofspiel, also known as The Game of Pure Strategy or GOPS, is a card game for two or more players. It was invented by Merrill Flood while at Princeton University in the 1930s.</p>
+            <figure>
+              <img src="images/truegoof.png">
+              <p>This next image is from my 2nd project I create called "Tweeter", which is a Twitter clone that demonstrates my proficency with JavaScript/CSS/HTML, AJAX calls and Databases.</p>
+              <img src="images/tweet.png">
+              <figcaption>
+                Goofspiel && "Tweeter";
+              </figcaption>
+            </figure>
+      
+          <h6> On-going work</h6>
+            <p>I've been working on <a href="https://www.codewars.com/users/ghildreth" target="_blank" >Code Wars</a>, <a href="https://javascript30.com/" target="_blank">#JavaScript30</a></p>
+            <figure class="columns is-moblie is-variable is-0 is-marginless grid-xl">
+              <div class="column" height="200" width="200">
+                <div class="image card" height="200" width="200">
+                  <a href="https://github.com/ghildreth/drumKit" target="_blank"><img src="images/drum.png" height="200" width="200"></a>
+                </div>
+                  <small class="level-item has-text-grey">
+                   Interative DrumKit
+                  </small>
+                </small>
+              </div>
+              <div class="column">
+                <div class="image card">
+                  <a href="https://github.com/ghildreth/vanillaClock" target="_blank"><img src="images/realClock.png" height="200" width="200"></a>
+                </div>
+                  <small class="level-item has-text-grey">
+                    Fully functional Clock
+                  </small>
+              </div>
+              <div class="column">
+                <div class="image card">
+                  <a href="https://github.com/ghildreth/jungle-rails" target="_blank"><img src="images/gameOfLife.png"></a>
+                </div>
+                  <small class="level-item has-text-grey">
+                   The Game of Life.
+                  </small>
+              </div>
+    <!--           <div class="column">
+                <div class="image card">
+                  <a href="https://github.com/ghildreth/cardGame" target="_blank"><img src="images/truegoof.png"></a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="image card">
+                  <a href="https://github.com/ghildreth/tweeter" target="_blank"><img src="images/tweet.png"></a>
+                </div>
+              </div> -->
+              </div>
+            </figure>
+          </div>
+        </div>
+  </section>
+  <script src="test.js"></script>
+</body>
+
+</html>
