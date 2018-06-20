@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Gabriel Hildreth</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <style> 
@@ -21,18 +21,39 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 22px;
 }
+
+h1 {
+    margin-top: 15px;
+}
+
+.section {
+    padding: 1rem 1.5rem;
+}
+.title.is-2 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.subtitle.is-4 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
     </style>
   </head>
   <body>
-  <section class="hero is-fullheight is-primary">
+  <section class="hero is-fullheight is-info is-mobile">
     <div class="hero-body">
         <div class="container has-text-centered is-fuild">
         <h1 class="title has-text-weight-bold is-size-1">
             Gabriel Hildreth
         </h1>
             <p class="typewriter">
-                Welcome to my portfolio of <strong>Web Development!</strong>!
+                Welcome to my portfolio!
             </p>
         <article class="media-center">
             <figure class="media-center">
@@ -41,26 +62,32 @@
                 </figure>
             </figure>
         </article>
-        <div class="media-content">
-                <div class="content">
-                  <p>
-                    <div class="has-text-grey-darker has-text-centered">Sociology - Boot-camp Grad, motivated to change the world</div><br>
-                    <div id="links" class="has-text-link">
-                        <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
-                        <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
-                        <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
-                    </div>
-                  </p>
-        
-                </div>
-              </div>
+
+<h1>
+    <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, my name Gabriel Hildreth.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+      <span class="wrap"></span>
+    </a>
+  </h1>
         <!-- <button>Projects</button> -->
         </div>
     </div>
     </section>
-    <section class="section is-paddingless-horizontal" style="padding-top: 0;"id="about">
+    <section class="section is-paddingless-horizontal is-mobile" style="padding-top: 0;"id="about">
             <div class="container grid">
               <div class="section is-paddingless-horizontal">
+                  <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <div class="has-text-grey-darker has-text-centered">Sociology && Boot-camp Grad, motivated to change the world</div><br>
+                          <div id="links" class="has-text-link">
+                              <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
+                              <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
+                              <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
+                          </div>
+                        </p>
+              
+                      </div>
+                    </div><br>
                 <h1 class="title is-2">So, what have you done?</h1><br>
                 <h3 class="subtitle is-4">A Sample of My Recent Projects:</h3>
               </div>
@@ -94,7 +121,9 @@
                 </figure>
                 <figcaption>
                   <small class="level-item has-text-grey">
-                    These projects, and more, were built in less than a week! You can find them <br> <a href="https://github.com/ghildreth" target="blank"> here on my GitHub<i class="fab fa-github"></i></a>
+                    <div className="github">
+                    These projects, and more, were built in less than a week! You can find them <a href="https://github.com/ghildreth" target="blank"> here on my GitHub<i class="fab fa-github"></i></a>
+                      </div>  
                   </small>
                 </figcaption>
     
@@ -137,7 +166,7 @@
                     <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p> -->
                     <h4 id="passion">Passion</h4>
                     <p>I've found beauty in ideas that transcend Computer Science, namely: Algorithms, Logarithms and Recursion. Here's an example of a function that, so simply, displays the elegant nature of recursion in terms of mathematics.</p>
-                    <pre>
+                    <!-- <pre>
         function power(base, exponent) {
           if (exponent == 0) {
             return 1;
@@ -155,7 +184,7 @@
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
           &lt;/body&gt;
         &lt;/html&gt; -->
-                  </pre>
+                  <!-- </pre> -->
                     <!-- <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
                     <table>
                       <thead>
@@ -242,5 +271,6 @@
                   </div>
                 </div>
   </section>
+  <script src="test.js">  </script>
   </body>
 </html>
