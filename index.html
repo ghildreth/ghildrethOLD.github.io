@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gabriel Hildreth</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <style> 
 
 .image img {
     display: block;
     height: auto;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 22px;
+    margin-top: -7px;
 }
 
 h1 {
@@ -41,15 +42,22 @@ h1 {
     display: flex;
     justify-content: center;
 }
+.hero {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#gabe{
+  border-radius: 50%;
+}
 
 
     </style>
   </head>
   <body>
-  <section class="hero is-fullheight is-info is-mobile">
+  <section class="hero is-fullheight is-mobile">
     <div class="hero-body">
         <div class="container has-text-centered is-fuild">
-        <h1 class="title has-text-weight-bold is-size-1">
+        <h1 class="title is-size-2">
             Gabriel Hildreth
         </h1>
             <p class="typewriter">
@@ -58,7 +66,7 @@ h1 {
         <article class="media-center">
             <figure class="media-center">
                 <figure class="image is-1x1 ">
-                <img src="images/pp1.jpg">
+                <img id="gabe" src="images/pp1.jpg">
                 </figure>
             </figure>
         </article>
@@ -72,51 +80,64 @@ h1 {
         </div>
     </div>
     </section>
-    <section class="section is-paddingless-horizontal is-mobile" style="padding-top: 0;"id="about">
-            <div class="container grid">
-              <div class="section is-paddingless-horizontal">
+
+    <section class="section" id="about">
+            <div class="container">
+              <div class="section">
                   <div class="media-content">
                       <div class="content">
                         <p>
-                          <div class="has-text-grey-darker has-text-centered">Sociology && Boot-camp Grad, motivated to change the world</div><br>
+                          <div class="has-text-grey-darker has-text-centered"></div><br>
                           <div id="links" class="has-text-link">
                               <a href="http://www.linkedin.com/in/ghildreth" target="_blank"> LinkedIn <i class="fab fa-linkedin"></i></a><br>
                               <a href="https://github.com/ghildreth" target="blank">GitHub<i class="fab fa-github"></i><br>
                               <a href="https://resume.creddle.io/resume/h55x9qcr853" target="_blank">Resumé <i class="fas fa-external-link-alt"></i></a><br>
+                              
                           </div>
                         </p>
-              
+                        <p class="snip">Sociology && Boot-camp Grad, motivated to change the world</p>
                       </div>
                     </div><br>
                 <h1 class="title is-2">So, what have you done?</h1><br>
                 <h3 class="subtitle is-4">A Sample of My Recent Projects:</h3>
               </div>
         
-                <figure class="columns is-variable is-1 is-marginless grid-xl">
-                  <div class="column">
-                    <div class="image card">
-                      <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png" height="200"></a>
-                    </div>
-                      <small class="level-item has-text-grey">
+                <figure class="tile is-ancestor">
+                  <div class="tile is-parent">
+
+                  <figure class="image is-256x256">
+                      <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png"></a>
+                  </figure>
+                  <!-- <figure class="image is-256x256">
+                      <a href="https://github.com/ghildreth/Beer-Cat-Tourism-App" target="_blank"><img src="images/beercat.png"></a>
+                  </figure> -->
+                      <!-- <small class="level-item has-text-grey">
                        Tourism App: "Beer Cat".
-                    </small>
+                    </small> -->
                   </div>
                   <div class="column">
-                    <div class="image card">
+                      <figure class="image is-256x256">
+                          <a href="https://github.com/ghildreth/chattyApp" target="_blank"><img src="images/austin.png"></a>
+                      </figure>
+                    <!-- <div class="image card">
                       <a href="https://github.com/ghildreth/chattyApp" target="_blank"><img src="images/austin.png"></a>
                     </div>
                       <small class="level-item has-text-grey">
                         Chatroom server: "Chatty App".
-                      </small>
+                      </small> -->
                   </div>
                   <div class="column">
-                    <div class="image card">
+                      <div class="column">
+                          <figure class="image is-256x256">
+                              <a href="https://github.com/ghildreth/jungle-rails" target="_blank"><img src="images/jungle.png"></a>
+                          </figure>
+                    <!-- <div class="image card">
                       <a href="https://github.com/ghildreth/jungle-rails" target="_blank"><img src="images/jungle.png"></a>
                     </div>
                       <small class="level-item has-text-grey">
                        E-commerce website: "Jungle".
                       </small>
-                  </div>
+                  </div> -->
                   </div>
                 </figure>
                 <figcaption>
@@ -166,7 +187,7 @@ h1 {
                     <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p> -->
                     <h4 id="passion">Passion</h4>
                     <p>I've found beauty in ideas that transcend Computer Science, namely: Algorithms, Logarithms and Recursion. Here's an example of a function that, so simply, displays the elegant nature of recursion in terms of mathematics.</p>
-                    <!-- <pre>
+                    <!-- <!-- <pre> -->
         function power(base, exponent) {
           if (exponent == 0) {
             return 1;
@@ -184,7 +205,7 @@ h1 {
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
           &lt;/body&gt;
         &lt;/html&gt; -->
-                  <!-- </pre> -->
+                  </pre>
                     <!-- <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
                     <table>
                       <thead>
