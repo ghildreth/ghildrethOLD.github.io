@@ -1,0 +1,177 @@
+/*========= header_area css ===========*/
+.header_area{
+}
+.navbar{
+    width: 100%;
+    top: 10px;
+    transform: translateY(0);
+    position: fixed;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+    -webkit-backface-visibilite:hidden;
+    .custome_container{
+        @media(min-width:1300px){
+            max-width: 1440px;
+        }
+    }
+    .logo_h{
+        margin-right: 0px;
+        img{
+            max-width: 100%;
+            transition: all 0.3s linear;
+            & + img{
+                display: none;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            margin-left: 35px;
+            .nav-link{
+                font: 600 14px/30px $mon;
+                color: #fff;
+                text-transform: uppercase;
+                position: relative;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                &:before{
+                    content: "";
+                    background: #fff;
+                    opacity: 0.71;
+                    position: absolute;
+                    left: auto;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 0%;
+                    height: 2px;
+                    z-index: 1;
+                    -webkit-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+                    -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+                    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+                }
+                &.active,&:hover{
+                    &:before{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        &.nav-right{
+            .nav-item{
+                margin-left: 0px;
+            }
+        }
+    }
+    .login{
+        padding: 5px 34px;
+        font: 600 14px/30px $mon;
+        background: #fff;
+        border-radius: 3px;
+        color: #494949;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        margin-top: 7px;
+        &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: scaleX(0);
+            border-radius: 3px;
+            background: #2e2c2c;
+            transform-origin: 50%;
+            transition-property: -webkit-transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+        &:hover{
+            box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.12);
+            color: #fff;
+            &:before{
+                transform: scaleX(1);
+            }
+        }
+    }
+    &.navbar_fixed{
+        background: #fff;
+        box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.1);
+        top: 0;
+        .logo_h{
+            img{
+                display: none;
+                & + img{
+                    display: inline-block;
+                    transition: all 0.3s linear;
+                }
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: #040c2c;
+                    &:before{
+                        background: #040c2c;
+                    }
+                }
+            }
+        }
+        .login{
+            background: #040c2c;
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.navbar-toggler{
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    height: 80px;
+    cursor: pointer;
+    span{
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-image: -moz-linear-gradient(0deg, #ed3d82 0%, #f66264 75%, #fe8645 100%);
+        background-image: -webkit-linear-gradient(0deg, #ed3d82 0%, #f66264 75%, #fe8645 100%);
+        background-image: -ms-linear-gradient(0deg, #ed3d82 0%, #f66264 75%, #fe8645 100%);
+        margin: auto;
+        margin-bottom: 5px;
+        transition: all 400ms linear;
+    }
+    &[aria-expanded="true"]{
+        span{
+            &:first-child{
+                transform: rotate(-45deg);
+                position: relative;
+                top: 6px;
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(42deg);
+                bottom: 8px;
+                position: relative;
+            }
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+}
