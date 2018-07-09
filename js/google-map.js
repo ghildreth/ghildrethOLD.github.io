@@ -1,8 +1,8 @@
 ;(function($) {
     "use strict";
     
-    var lat=51.508742;
-    var long=-0.120850;   
+    var lat=49.2827;
+    var long=-123.1207;   
 
     if ($("#mapBox").length > 0)
     {
