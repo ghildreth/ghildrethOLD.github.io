@@ -447,12 +447,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("../x/snow.jpg") no-repeat scroll center /cover;
+  background: url("../x/motherboard.jpeg") no-repeat scroll center /cover;
   z-index: -1;
 }
 
 .banner_content {
   color: #fff;
+  background: #25656d; 
+  padding: 1em;
 }
 
 .banner_content h5 {
@@ -1407,6 +1409,5 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gabe's Stuff */
 a.navbar-brand.logo_h {
-  height: 100px;
-  width: 100px;
+  font-size: -webkit-xxx-large;
 }
